@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: GoogleFonts.lobster(fontSize: 200, color: Colors.grey),
                 ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
                         onPressed: () {
@@ -94,20 +94,17 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: Colors.blue,
                         )),
                     SizedBox(
-                      height: 20,
+                      height: 40,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 40),
-                      child: IconButton(
-                          onPressed: () {
-                            nemeh();
-                          },
-                          icon: const Icon(
-                            Icons.remove_circle_outline_outlined,
-                            size: 70,
-                            color: Colors.blue,
-                          )),
-                    ),
+                    IconButton(
+                        onPressed: () {
+                          nemeh();
+                        },
+                        icon: const Icon(
+                          Icons.remove_circle_outline_outlined,
+                          size: 70,
+                          color: Colors.blue,
+                        )),
                   ],
                 ),
               ],
